@@ -3,7 +3,7 @@ import type {WeatherInfo} from "../../utils/types";
 
 const weatherSlice = createSlice({
     name: 'weather',
-    initialState: null as WeatherInfo | null,
+    initialState: {} as WeatherInfo,
     reducers: {
         setWeather: (_state, action) => action.payload
     }

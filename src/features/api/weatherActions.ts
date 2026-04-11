@@ -3,7 +3,8 @@ import {setWeather} from "../weather/weatherSlice.ts";
 import {setMessage} from "../message/messageSlice.ts";
 import type {AppDispatch} from "../../app/store.ts";
 
-export const fetchWeather = (city: string) => async (dispatch: AppDispatch) => {
+export const fetchWeather =
+    (city: string) => async (dispatch: AppDispatch) => {
     try {
         const res = await fetch(`${base_url}?q=${city}&appid=${api_key}&units=metric`)
         const data = await res.json();
