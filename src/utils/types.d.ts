@@ -3,5 +3,6 @@ export interface WeatherInfo {
     city: string;
     temp: number;
     pressure: number;
-    sunset: number
+    sunset: number;
+
 }
